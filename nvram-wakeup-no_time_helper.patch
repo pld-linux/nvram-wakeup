@@ -1,0 +1,21 @@
+diff -dur nvram-wakup-0.99b.orig/Makefile nvram-wakup-0.99b/Makefile
+--- nvram-wakup-0.99b.orig/Makefile	2008-11-23 14:38:59.000000000 +0100
++++ nvram-wakup-0.99b/Makefile	2009-03-04 08:32:25.000000000 +0100
+@@ -15,7 +15,7 @@
+ 
+ PROG      = nvram-wakeup
+ PROG_SH   = VDR/vdrshutdown
+-HELPER    = rtc time biosinfo guess cat_nvram
++HELPER    = rtc biosinfo guess cat_nvram
+ HELPER_SH = guess-helper
+ DOC       = README README.mb README.reboot HISTORY nvram-wakeup.conf
+ 
+@@ -29,7 +29,7 @@
+ GTTXTSRC = $(GTTXT:%.mo=%.po)
+ MAN5   = nvram-wakeup.conf.5
+ MAN8   = nvram-wakeup.8 biosinfo.8 cat_nvram.8 guess-helper.8 guess.8 \
+-         rtc.8 set_timer.8 time.8
++         rtc.8 set_timer.8
+ MAN5GZ = $(MAN5:%.5=%.5.gz)
+ MAN8GZ = $(MAN8:%.8=%.8.gz)
+ DEVS = /dev/nvram /dev/rtc /dev/mem
