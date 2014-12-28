@@ -9,7 +9,7 @@ Source0:	http://downloads.sourceforge.net/nvram-wakeup/nvram-wakup-%{version}.ta
 # Source0-md5:	ebd6e276167ba4351ecb1ea2bd368422
 Patch0:		%{name}-no_time_helper.patch
 URL:		http://sourceforge.net/projects/nvram-wakeup/
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
